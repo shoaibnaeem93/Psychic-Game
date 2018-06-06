@@ -1,10 +1,74 @@
-h4 {
-    margin-left: 10px;
+html {
+    background: url("/Users/shoaibnaeem93/Desktop/Homework/Psychic-Game/assets/images/psychic.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;     
+}
+
+.container-fluid {
+    background: url("/Users/shoaibnaeem93/Desktop/Homework/Psychic-Game/assets/images/psychic.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+ 
+#logo {
+    width: 100%;
+    color: purple;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#logo:hover,
+  input[type=submit]:hover {
+    color: rgb(205, 70, 218);
+}
+
+.slideDown{
+    animation-name: reappear;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
+@keyframes reappear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+#game {
+    font-weight: bolder;
+    font-size: 40px;
+    background: url("/Users/shoaibnaeem93/Desktop/Homework/Psychic-Game/assets/images/psychic.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.scoreboard {
+    margin-left: 2%;
+}
+
+#Guess {
+    color: white;
+}
+#Wins {
     color: green;
 }
 
-#game {
-    color: black;
-    font-weight: bolder;
-    font-size: 40px;
+#Losses {
+    color: red
 }
+
+#GuessesLeft {
+    color: grey;
+}
+
+#LettersGuessed {
+    color: white;
+}
+

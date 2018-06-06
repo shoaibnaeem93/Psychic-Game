@@ -64,13 +64,14 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 		lettersGuessed.push(userGuess);
 		
 		
+		
 
         var html = 
-       
+        "<div class= 'scoreboard' id='Guess'> Guess what letter I'm thinking of?" +
         "<div class='scoreboard' id='Wins'>Wins: " + wins + "</div>" +
         "<div class='scoreboard' id='Losses'>Losses: " + losses + "</div>" +
         "<div class='scoreboard' id='GuessesLeft'>Guesses Left: " + guessesLeft + "</div>" +
-        "<div class='scoreboard' id='LettersGuesses'>Letters Guessed: " + lettersGuessed + "</div>";
+        "<div class='scoreboard' id='LettersGuessed'>Letters Guessed: " + lettersGuessed + "</div>";
 
 
 		document.querySelector('#game').innerHTML = html;

@@ -27,7 +27,7 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 		console.log(userGuess);
 
-//This function resets the game back to the initial startup 
+//This function resets the game back to the initial startup without affect wins or losses count
 		function reset() {
 		computerGuess=cpuLetter[Math.floor(Math.random() * cpuLetter.length)];
 		console.log(computerGuess);
@@ -40,7 +40,7 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 
 // the function will trigger if any of these conditions are met and the gameOver variable is true. Appropriate win or loss will be recorded
 
-		if ((userGuess==computerGuess)) {
+		if (userGuess===computerGuess) {
 			gameOver=true;
 			wins++;
 			alert("The letter was "+ computerGuess + " Wow, you're a psychic!!");
@@ -67,7 +67,7 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 		
 
         var html = 
-        "<div class= 'scoreboard' id='Guess'> Guess what letter I'm thinking of?" +
+        "<div class='scoreboard' id='Guess'> Guess what letter I'm thinking of?" +
         "<div class='scoreboard' id='Wins'>Wins: " + wins + "</div>" +
         "<div class='scoreboard' id='Losses'>Losses: " + losses + "</div>" +
         "<div class='scoreboard' id='GuessesLeft'>Guesses Left: " + guessesLeft + "</div>" +

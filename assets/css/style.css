@@ -77,22 +77,3 @@ html {
 }
 
 
-@media screen and (max-width: 400px){
-    
-    .container-fluid {
-        background: url("../images/psychic.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover; 
-    }
-
-    html {
-        background: url("../images/psychic.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover; 
-    }
-
-}

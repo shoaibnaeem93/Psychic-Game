@@ -26,6 +26,7 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 //establish a variable for whatever key we press as the user's guess and make it lower case and insert into the console as the users guess
 		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 		console.log(userGuess);
+	
 
 //This function resets the game back to the initial startup without affect wins or losses count
 		function reset() {
@@ -39,6 +40,8 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 	}
 
 // the function will trigger if any of these conditions are met and the gameOver variable is true. Appropriate win or loss will be recorded
+
+lettersGuessed.push(userGuess);
 
 		if (userGuess===computerGuess) {
 			gameOver=true;
@@ -61,7 +64,7 @@ var computerGuess = cpuLetter[Math.floor(Math.random()*cpuLetter.length)];
 		}
 	
 // letters guessed variable records whatever key we press through the userGuess variable we made
-		lettersGuessed.push(userGuess);
+		
 		
 		
 		
